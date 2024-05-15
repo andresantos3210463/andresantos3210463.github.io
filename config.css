@@ -1,27 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
-@media only screen and (max-width: 600px) 
-{
-
-  body 
-  {
-    align-content: center;
-  }
-
-  main {
-    text-align: center;
-  }
-
-  a.img{
-    width: 50%;
-  }
-}
-
-
-
 *
 {
-    background-color: rgb(255, 255, 255);
+    
     margin: 0px;
     padding: 0px;
 
@@ -30,7 +11,8 @@
 
 body
 {
-    color: black;
+  background-color: black;
+    color: white;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
@@ -51,13 +33,20 @@ header
     font-size: 300%;
 }
 
+hr {
+  width: 100%; 
+  margin: 0;
+
+}
 
 a
 {
-
     text-decoration: none;
     color: white;
-    background-color: black;
+}
+
+nav.a{
+  color: white;
 }
 
 
@@ -66,25 +55,63 @@ main
 {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin: auto;
+    
 }
 
 footer
 {
     margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 
 
-li 
+li, ul
 {
   display: inline;
- 
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-img
-{
-    width: 100%; 
+
+
+
+section{
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2%;
 }
+
+section figure {
+  flex-basis: 30%;
+}
+
+section figure img
+{ 
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: fit-content;
+}
+
+img{
+  width: 100%;
+}
+
+
+
+
+
 
 video
 {
@@ -97,16 +124,98 @@ audio
     align-items: center;
 }
 
-h3
+
+
+
+
+
+
+h1
 {
-    font-size: 30px;
+    font-size: 170%;
     display: inline;
     position:sticky;
     top: 0px;
     left: 0px;
 }
 
+h3
+{
+    margin-top: 10px;
+    font-size: 120%;
+    display: inline;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+
 th, td 
 {
   text-align: center;
+}
+
+figcaption {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) 
+{
+  body 
+  {
+    align-content: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+
+  section figure {
+    flex-basis: 100%;
+  }
 }
