@@ -1,51 +1,100 @@
-<!DOCTYPE html>
+<!--
 
+
+- André Santos 3210463
+
+Data de avaliação
+- 31/05/2024
+
+Nome do enunciado de avaliação
+- Portfolio
+
+Ano letivo (3º, 2023-2024), 
+Semestre (2º), 
+Unidade Curricular (Laboratório de Projeto II), 
+Curso (DGM), 
+Escola (ESAD.CR), 
+Docente (Marco Heleno).
+
+
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
+    <!-- Define o conjunto de caracteres usado -->
     <meta charset="UTF-8">
+    <!-- Descrição da página para motores de busca -->
     <meta name="description" content="Aqui encontras tudo sobre mim">
+    <!-- Palavras-chave para motores de busca -->
     <meta name="keywords" content="about, me, about me">
+    <!-- Autor da página -->
     <meta name="author" content="André Santos">
+    <!-- Ajusta a página para diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="config.css" type="text/css" rel="stylesheet" />
     
+    <!-- Link para o arquivo de folha de estilo CSS -->
+    <link href="config.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Título da página -->
     <title>About me</title>
 </head>
 
-
-
 <body>
-	
-	<header>	
-		
-		<nav>
-			<ul>
-				<li><a href="index.html" target="_self">André Santos</a></li>
-				<li></li><a href="portfolio.html" target="_self">Portfolio</a></li>
-				<li></li><a href="about.html" target="_self">About_me</a></li>
-				<li></li><a href="contact.html" target="_self">Contacts</a></li>
-			</ul>
-		</nav>
-		
-	</header>
-	
+    
+    <header>    
+        <!-- Mapa de navegação fixa -->
+        <nav id="top">
+            <ul>
+                <!-- Links de navegação para outras páginas -->
+                <li><a href="index.html" target="_self">André Santos</a></li>
+                <li><a href="portfolio.html" target="_self">Portfolio</a></li>
+                <li><a href="about.html" target="_self">About_me</a></li>
+                <li><a href="contact.html" target="_self">Contacts</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <hr><!-- Cria uma linha -->
+    
+    <main>
+        <!-- Título principal da página com uma legenda -->
+        <figcaption><h1>About Me</figcaption></h1>
+        
+        <!-- Parágrafo de introdução sobre o autor -->
+        <p>I'm André Santos, a <strong>versatile designer</strong> specializing in <u>3D modeling</u>, <u>illustrative art</u> and <u>multimedia.</u></p>      
+        
+        <!-- Seção com uma imagem do autor -->
+        <section><figureh><img src="projects/images/IMG-20220224-WA0011.jpg" alt="me"/></figureh></section>
+        
+        <br>      
+        
+        <!-- Tabela com detalhes adicionais sobre as minhas habilidades -->
+        <table>
+            <tr>
+                <!-- Primeira célula da linha -->
+                <td>
+                    <!-- Subtítulo e descrição das atividades  -->
+                    <h3>What I Do</h3>
+                    <p>I specialize in 3D modeling, texturing, rigging, animation, rendering and motion techniques, realistic 3D assets for a wide range of applications. Whether it's virtual reality, product realization, architectural visualization or transforming 2D concepts into fully realized 3D representations, I have the skills and versatility to bring any vision to life. My comprehensive capabilities ensure that I can approach any 3D project with precision and creativity, delivering exceptional results every time. <br><br>
+                    Furthermore, I specialize as a professional multimedia technician, having the ability to solve any problem in relation to illustration and animation.</p>
+                </td>
 
-<hr>
-	<main>
+                
 
-		<figcaption><h1>About me</figcaption></h1>
-			
-		
-
-	  <p>I'm André Santos, a <strong>versatile designer</strong> specializing in <u>3D modeling</u>, <u>illustrative art</u> and <u>multimedia.</u></p>	  
-			
-	  <section><figureh><img src="projects/images/IMG-20220224-WA0011.jpg" alt="me"/></figureh></section>
-	</main>
-<hr>
+                <!-- Segunda célula da linha, contém uma imagem representando os componentes do autor -->
+                <td><img src="https://framerusercontent.com/images/CKIWF6lP39t1dvzsNDSO5P1WGMk.jpg" alt="pc"></td>
+            </tr>
+        </table>
+        
+    </main>
+    <a href="#top"><p>↑</p></a><!-- Puxa a página para o local onde se encontra o ID "top" -->
+    <br>
+    <hr>
+    
 </body>
+
 
 </html>

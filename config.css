@@ -1,126 +1,158 @@
+/* Importa a fonte "Kode Mono" do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
-*
-{
-    
+/* Definições de estilo para todos os elementos */
+* {
     margin: 0px;
     padding: 0px;
-
 }
 
-
-body
-{
-  background-color: black;
+/* Estilos para o corpo da página */
+body {
+    background-color: black;
     color: white;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
-    
-
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-header
-{
+
+
+
+
+
+
+/* Estilos para o cabeçalho */
+header {
     text-align: center;
     margin-bottom: 10px;
     text-decoration: none;
     font-size: 300%;
 }
 
-hr {
-  width: 100%; 
-  margin: 0;
-
+/* Estilos para a seção principal */
+main {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-a
-{
+/* Estilos para o rodapé */
+footer {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para a linha horizontal */
+hr {
+    width: 100%;
+    margin: 0;
+}
+
+/* Estilos para links */
+a {
     text-decoration: none;
+    text-align: center;
+    color: white;
+   
+}
+
+/* Estilos para links dentro de nav */
+nav a {
     color: white;
 }
 
-nav.a{
-  color: white;
+
+
+
+
+
+
+
+/* Estilos para listas e itens de lista */
+li, ul {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+tr{
+    display: inline;
+}
+
+/* Estilos para parágrafos dentro de células de tabela */
+td p {
+    margin-right: 5%;
+}
+
+/* Estilos para imagens dentro de células de tabela */
+td img {
+    max-height: 3000px;
 }
 
 
 
-main
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto;
-    
+
+
+
+
+
+
+
+/* Estilos para a seção de imagens */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2%;
 }
 
-footer
-{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-
-
-li, ul
-{
-  display: inline;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
-section{
-
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 2%;
-}
-
+/* Estilos para figuras dentro da seção de imagens */
 section figure {
-  flex-basis: 30%;
+    flex-basis: 30%;
 }
 
-section figure img
-{ 
+/* Estilos para imagens dentro de figuras */
+section figure img {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
     height: fit-content;
 }
 
-img{
-  width: 100%;
+/* Estilos para imagens */
+img {
+    width: 100%;
 }
 
 
 
-
+/* Estilos para figuras  */
 section figureh {
-  max-width: 1000px;
+    max-width: 1000px;
 }
 
-section figureh img
-{ 
+/* Estilos para imagens dentro de figuras horizontais */
+section figureh img {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -135,21 +167,14 @@ section figureh img
 
 
 
-
-iframe{
-  padding-bottom: 20px;
-  padding-top: 20px;
+/* Estilos para vídeos */
+iframe {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-video
-{
-    width: 100%; 
-}
-
-audio
-{
-    height: 10x;
-    align-items: center;
+video {
+    width: 100%;
 }
 
 
@@ -158,17 +183,19 @@ audio
 
 
 
-h1
-{
+
+
+/* Estilos para títulos */
+h1 {
     font-size: 170%;
     display: inline;
-    position:sticky;
+    position: sticky;
     top: 0px;
     left: 0px;
 }
 
-h3
-{
+/* Estilos para subtítulos */
+h3 {
     margin-top: 10px;
     font-size: 120%;
     display: inline;
@@ -176,20 +203,15 @@ h3
     left: 0px;
 }
 
-
-
-
-
-
-
-th, td 
-{
-  text-align: center;
+p{
+    margin-bottom: 10px;
 }
 
+
+/* Estilos para legendas */
 figcaption {
-  margin-bottom: 10px;
-  margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -200,89 +222,106 @@ figcaption {
 
 
 
+
+
+
+/* Estilos para a galeria de imagens */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
 }
 
+/* Estilos para itens da galeria de imagens */
 .gallery-item {
-  
-  text-decoration: none;
+    text-decoration: none;
 }
 
+/* Estilos para imagens dentro de itens da galeria de imagens */
 .gallery-item img {
-  width: 550px;
-  height: 400px;
-  max-width: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.1);
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 900px) 
-{
-  body 
-  {
-    align-content: center;
-  }
-
-  nav {
-    text-align: center;
-  }
-
-
-  section figure {
-    flex-basis: 48%;
-  }
-
-  .gallery-item img {
     width: 550px;
     height: 400px;
+    max-width: 100%;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
-  }
+}
 
+/* Efeito de escala ao passar o mouse sobre as imagens */
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+table{
+
+    column-count: 2;
+}
+
+
+
+
+
+
+
+/* Media query para telas menores que 900px */
+@media only screen and (max-width: 900px) {
+    body {
+        align-content: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    section figure {
+        flex-basis: 48%;
+    }
+
+    .gallery-item img {
+        width: 550px;
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
 }
 
-@media only screen and (max-width: 600px) 
-{
-  body 
-  {
-    background-color: black;
-    align-content: center;
-  }
-
-  nav {
-    text-align: center;
-  }
 
 
-  section figure {
-    flex-basis: 100%;
-  }
 
-  .gallery-item img {
-    width: 550px;
-    height: 200px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
+
+
+
+
+/* Media query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: black;
+        align-content: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    section figure {
+        flex-basis: 100%;
+    }
+
+    .gallery-item img {
+        width: 550px;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
 }
