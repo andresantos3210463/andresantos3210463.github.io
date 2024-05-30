@@ -174,7 +174,7 @@ iframe {
 }
 
 video {
-    width: 100%;
+    width: 40%;
 }
 
 
@@ -225,7 +225,7 @@ figcaption {
 
 
 
-/* Estilos para a galeria de imagens */
+/* Galeria de imagens */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -259,13 +259,6 @@ figcaption {
 
 
 
-table{
-
-    column-count: 2;
-}
-
-
-
 
 
 
@@ -292,6 +285,9 @@ table{
         transition: transform 0.3s ease;
     }
 
+    video {
+        width: 60%;
+    }
 }
 
 
@@ -324,4 +320,8 @@ table{
         transition: transform 0.3s ease;
     }
 
+
+    video {
+        width: 80%;
+    }
 }
